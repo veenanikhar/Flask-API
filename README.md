@@ -20,7 +20,7 @@ Clone the repository or create a new project directory, then create a virtual en
 
 ```bash
 # Install Python
-- Ensure Python 3.x is installed on your
+# Ensure Python 3.x is installed on your
 python --version
 ```
 - If not installed, download and install Python from [python.org](https://www.python.org/).
@@ -43,7 +43,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Install Dependencies
-Install `Flask`, `Flask-CORS`, `flask-swagger-ui`, and `psycopg2`:
+# Install `Flask`, `Flask-CORS`, `flask-swagger-ui`, and `psycopg2`:
 pip install flask flask-cors flask-swagger-ui psycopg2
 ```
 
