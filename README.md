@@ -19,6 +19,13 @@ Before starting, ensure you have the following installed:
 Clone the repository or create a new project directory, then create a virtual environment and install the required dependencies.
 
 ```bash
+# Install Python
+- Ensure Python 3.x is installed on your
+python --version
+```
+- If not installed, download and install Python from [python.org](https://www.python.org/).
+
+```bash
 # Create a new directory (if not already done)
 mkdir flask-swagger-api
 cd flask-swagger-api
@@ -34,6 +41,10 @@ source venv/bin/activate
 
 # Install required Python packages
 pip install -r requirements.txt
+
+# Install Dependencies
+Install `Flask`, `Flask-CORS`, `flask-swagger-ui`, and `psycopg2`:
+pip install flask flask-cors flask-swagger-ui psycopg2
 ```
 
 Your `requirements.txt` should include:
@@ -58,7 +69,9 @@ Ensure PostgreSQL is installed and running. Create a new database for this proje
    ```python
    app.config['DATABASE_URL'] = 'postgresql://postgres:1234@localhost:5433/flaskapi'
    ```
-
+- `postgres`: Default username
+- `1234`: Replace with your password
+- `5433`: Replace with your PostgreSQL port (default is usually `5432`)
 ### 4. Running the Application
 
 Once everything is set up, run the application:
